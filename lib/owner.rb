@@ -14,7 +14,7 @@ class Owner
   end
 
   def cats
-    all = Cat.all.select {|cat| cat.owner == self }
+    all = Cat.all.find_all {|cat| cat.owner == self }
     puts "ALL CATS"
     puts all.inspect
     all
