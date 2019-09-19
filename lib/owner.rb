@@ -22,8 +22,9 @@ class Owner
   end
 
   def buy_cat name
-    cat = Cat.find_cat_by_name name
-    cat.owner = self
+    #cat = Cat.find_cat_by_name name
+    #cat.owner = self
+    cat = Cat.new name, self
   end
 
   # Class methods
