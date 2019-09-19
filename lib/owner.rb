@@ -33,7 +33,7 @@ class Owner
 
   def walk_dogs
     puts "walk dogs"
-    puts self.dogs
+    puts self.dogs.inspect
     self.dogs.each {|dog| dog.mood == "happy"}
   end
 
