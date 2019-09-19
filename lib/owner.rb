@@ -14,10 +14,7 @@ class Owner
   end
 
   def cats
-    all = Cat.all.select {|cat| cat.owner == self }
-    puts "ALL CATS"
-    puts Cat.all.inspect
-    all
+    Cat.all.select {|cat| cat.owner == self }
   end
 
   def dogs
@@ -26,8 +23,6 @@ class Owner
 
   def buy_cat name
     cat = Cat.find_cat_by_name name
-    puts "CAT"
-    puts cat.inspect
     cat.owner = self
   end
 
