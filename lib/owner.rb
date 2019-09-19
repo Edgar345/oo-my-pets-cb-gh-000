@@ -35,6 +35,7 @@ class Owner
     puts "walk dogs"
     puts self.dogs.inspect
     self.dogs.each {|dog| dog.mood == "happy"}
+    puts self.dogs.inspect
   end
 
   # Class methods
