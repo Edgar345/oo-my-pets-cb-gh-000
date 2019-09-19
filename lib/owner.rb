@@ -44,7 +44,10 @@ class Owner
       dog.mood = "nervous"
       dog.owner = nil
     end
-    self.cats.each {|cat| cat.mood = "nervous"}
+
+    self.cats.each do |cat|
+      cat.mood = "nervous"
+    end
   end
 
   # Class methods
